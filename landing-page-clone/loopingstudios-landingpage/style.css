@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Poppins:ital,wght@0,200;0,300;0,400;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow-x:hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 10rem;
+}
+
+.logo h1 {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.900);
+}
+
+.menu-link li,a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.900);
+    font-family: 'Inter', sans-serif;
+    margin: 0 7px;
+    font-size: .9em;
+    transition: .6s;
+}
+
+.menu-link a:hover {
+    transform: rotate(360deg);
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+section {
+    position: relative;
+    padding: 3rem 10rem;
+}
+
+.title {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+    width: 500px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.900);
+}
+
+.title h1 {
+    color: rgba(255, 255, 255, 0.900);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 4rem;
+}
+
+.vr-container {
+    display: flex;
+}
+
+.virtual-reality {
+    position: relative;
+    top: 20rem;
+    display: flex;
+    z-index: 1;
+}
+
+
+.vr-text {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    text-align: justify;
+    background: white;
+    z-index: 3;
+    padding: 3rem 5rem;
+    top: 90%;
+    left: 53%;
+}
+
+.vr-text h2 {
+    font-size: 3em;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.vr-text p {
+    font-size: .8em;
+    text-align: justify;
+    line-height: 30px;
+    color: rgb(116, 116, 116);
+}
+
+.last-section {
+    height: 100vh;
+    width: 100%;
+    padding-top: 30rem;
+    padding-bottom: 80%
+}
+
+.creations-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.creations-header .btn-creations {
+    padding: 10px 35px;
+    background: transparent;
+    border: 1px solid black;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.creations-header .btn-creations:hover {
+    background: black;
+    color: white;
+}
+
+.creations h1 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.container-images {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.container-images img {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.container-images img:hover {
+    transform: translateY(-33px);
+    opacity: .6;
+}
+
+footer {
+    padding: 3rem 10rem;
+    position: absolute;
+    height:150px;
+    width: 100%;
+    background: black;
+}
+
+.footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-header h2 {
+    color: white;
+}
+
+.footer-header .icons img {
+    margin: 0 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: .8em;
+}
+
+.menu li {
+    display: inline-block;
+}
