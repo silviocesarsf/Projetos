@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="">
+        </div>
+    </header>
+    <section>
+        <div class="card">
+            <div class="title">
+                <h1>Login</h1>
+            </div>
+            <div class="inputs">
+                <input type="email" autocomplete="none" placeholder="Insira seu Email">
+                <input type="password" placeholder="Insira sua Senha">
+                <button class="btn-login">Login</button>
+                <div class="cadastro">
+                    <p><a href="#" id="registrar">Registre-se <span>Aqui</span></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="registro off">
+            <div class="header-reg">
+                <button class="btn-cadastro_header">Voltar</button>
+            </div>
+            <div class="title-reg">
+                <p>Registre-se</p>
+            </div>
+            <div class="inputs-reg">
+                <input id="name-reg" type="text" placeholder="Insira seu Nome">
+                <input type="number" placeholder="Insira sua Idade">
+                <input type="email" autocomplete="none" placeholder="Insira seu Email">
+                <input type="password" placeholder="Insira sua Senha">
+                <button class="btn-cadastro">Registrar</button>
+            </div>
+            <div class="termos">
+                <label for="termos">Você concorda com os <a href="#">Termos de uso ?</a></label>
+                <input type="checkbox" id="termos" name="termos">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
