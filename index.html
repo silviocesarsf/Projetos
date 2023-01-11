@@ -9,24 +9,37 @@
     <script src="index.js" defer></script>
 </head>
 <body>
+    <div class="background-modal off-background">
+                
+    </div>
+        <div class="modal-errorcontainer">
+            <div class="modal-error off">
+                <h3>Ocorreu um erro, verifique os dados novamente !</h3>
+            </div>
+        </div>
     <header>
         <div class="logo">
             <img src="assets/logo.png" alt="">
         </div>
     </header>
     <section>
+        <div class="login-validatedcontainer">
+            <div class="login-validated off">
+                <img src="assets/confirma.png" alt="">
+            </div>
+        </div>
         <div class="card">
             <div class="title">
                 <h1>Login</h1>
             </div>
-            <div class="inputs">
-                <input type="email" autocomplete="none" placeholder="Insira seu Email">
-                <input type="password" placeholder="Insira sua Senha">
+            <form class="inputs">
+                <input type="email" id="email-login" autocomplete="none" placeholder="Insira seu Email">
+                <input type="password" id="senha-login" placeholder="Insira sua Senha">
                 <button class="btn-login">Login</button>
                 <div class="cadastro">
                     <p><a href="#" id="registrar">Registre-se <span>Aqui</span></a></p>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="registro off">
             <div class="header-reg">
@@ -35,13 +48,13 @@
             <div class="title-reg">
                 <p>Registre-se</p>
             </div>
-            <div class="inputs-reg">
+            <form class="inputs-reg">
                 <input id="name-reg" type="text" placeholder="Insira seu Nome">
-                <input type="number" placeholder="Insira sua Idade">
-                <input type="email" autocomplete="none" placeholder="Insira seu Email">
-                <input type="password" placeholder="Insira sua Senha">
+                <input id="idade-reg" type="number" placeholder="Insira sua Idade">
+                <input id="email-reg" type="email" autocomplete="none" placeholder="Insira seu Email">
+                <input id="senha-reg" type="password" placeholder="Insira sua Senha">
                 <button class="btn-cadastro">Registrar</button>
-            </div>
+            </form>
             <div class="termos">
                 <label for="termos">Você concorda com os <a href="#">Termos de uso ?</a></label>
                 <input type="checkbox" id="termos" name="termos">
