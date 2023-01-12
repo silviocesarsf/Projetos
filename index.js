@@ -9,6 +9,8 @@ const idadereg = document.querySelector('#idade-reg')
 const modalError = document.querySelector('.modal-error')
 const background = document.querySelector('.background-modal')
 const loginVal = document.querySelector('.login-validated')
+const checkbox = document.querySelector('#checkbox')
+
 // Animação
 
 document.querySelector('#registrar').addEventListener('click', () => {
@@ -27,7 +29,7 @@ document.querySelector('.btn-cadastro_header').addEventListener('click', () => {
     }
 })
 
-// Validação
+// Validação login
 
 document.querySelector('.btn-login').addEventListener('click', () => {
     if(email.value === 'silvio@gmail.com' && senha.value === 'silvio'){
@@ -51,8 +53,10 @@ document.querySelector('.btn-login').addEventListener('click', () => {
     }
 })
 
+// Validação registro
+
 document.querySelector('.btn-cadastro').addEventListener('click', () => {
-    if(senhareg.value.length = '' || idadereg.value <= 16){
+    if(senhareg.value.length == '' || idadereg.value <= 16 ){
         background.classList.toggle('on-background')
         modalError.classList.toggle('on-error')
         setTimeout(() => {
@@ -60,6 +64,11 @@ document.querySelector('.btn-cadastro').addEventListener('click', () => {
             modalError.classList.remove('on-error')
         }, 2000);
     } else {
-
+        loginVal.classList.toggle('login-on')
+        background.classList.toggle('on-background')
+        setTimeout(() => {
+            background.classList.remove('on-background')
+            loginVal.classList.remove('login-on')
+        }, 2000);
     }
 })

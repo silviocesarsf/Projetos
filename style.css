@@ -10,6 +10,7 @@
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
 }
+
 input[type=number] { 
    -moz-appearance: textfield;
    appearance: textfield;
@@ -33,6 +34,8 @@ body::before {
     width: 100%;
 }
 
+/* Cabeçalho */
+
 header {
     display: flex;
     align-items: center;
@@ -44,6 +47,8 @@ header {
 .logo img {
     height: 100px;
 }
+
+/* Login */
 
 section {
     height: 100vh;
@@ -122,6 +127,8 @@ section {
     width: 100%;
     gap: 20px;
 }
+
+/* Registro */
 
 .cadastro {
     bottom: 20%;
@@ -208,7 +215,7 @@ section {
 
 .termos {
     position: relative;
-    bottom: 7rem;
+    bottom: 6rem;
     text-align: center;
 }
 
@@ -236,6 +243,8 @@ section {
     position: relative;
 }
 
+/* Classes Modals */
+
 .off {
     opacity: 0;
     top: 0%;
@@ -250,7 +259,7 @@ section {
 
 .on-error {
     opacity: 1;
-    top: 5%;
+    top: 10%;
 }
 
 .off-background {
@@ -261,7 +270,7 @@ section {
 
 .on-background {
     z-index: 10;
-    opacity: .7;
+    opacity: .9;
     display: inline-block;
 }
 
@@ -314,7 +323,6 @@ section {
     transition: .5s;
     text-align: center;
     position: absolute;
-    top: 100%;
     left: 43%;
     height: 300px;
     transform: translate(-50%,-50%);
@@ -322,7 +330,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: rotate 3s ease-in-out infinite ;
+    animation: rotate 6s ease-in-out infinite ;
 }
 
 .login-validated img {
@@ -339,7 +347,7 @@ section {
 }
 
 .login-on {
-    top: 30%;
+    top: 20%;
     opacity: 1;
     z-index: 15;
 }
@@ -352,16 +360,46 @@ section {
     }
 
     50% {
-        transform: translateY(10px);
+        transform: translateY(30px);
     }
 }
 
 @keyframes rotate {
     0%, 100% {
-        transform: rotate(0deg);
+        transform: translateY(0px);
     }
 
     50% {
-        transform: rotate(360deg);
+        transform: translateY(30px);
+    }
+}
+
+/* Responsivo */
+
+@media screen and (max-width:768px){
+    header {
+        display: none;
+    }
+    .card {
+        height: 600px;
+        width: 400px;
+    }
+
+    .registro {
+        height: 600px;
+        width: 400px;
+    }
+
+    .termos {
+        font-size: .9em;
+        padding: 2rem 0;
+    }
+
+    .modal-error {
+        left: 27%;
+    }
+
+    .login-validated {
+        left: 35%;
     }
 }
